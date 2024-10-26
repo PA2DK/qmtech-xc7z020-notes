@@ -3,6 +3,10 @@ title: QMTECH XC7Z020 Notes
 description: Notes on the QMTECH ZYNQ XC7Z020 starter kit
 baseurl: /qmtech-xc7z020-notes
 url: https://pavel-demin.github.io
+permalink: /:slug/
+
+source-link: https://github.com/pavel-demin/qmtech-xc7z020-notes
+issues-link: https://github.com/pavel-demin/qmtech-xc7z020-notes/issues
 
 release-image: https://github.com/pavel-demin/qmtech-xc7z020-notes/releases/download/20240811/qmtech-xc7z020-alpine-3.20-armv7-20240811.zip
 

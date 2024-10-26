@@ -1,7 +1,6 @@
 ---
 layout: page
 title: LED blinker
-permalink: /led-blinker-77-76/
 ---
 
 Introduction
@@ -58,7 +57,7 @@ This repository contains the following components:
 
 All steps of the development chain and the corresponding scripts are shown in the following diagram:
 
-![Scripts]({{ "/img/scripts.png" | prepend: site.baseurl }})
+![Scripts]({% link img/scripts.png %})
 
 Syntactic sugar for IP cores
 -----
@@ -116,7 +115,7 @@ A pre-built SD card image can be downloaded from [this link]({{ site.release-ima
 
 To write the image to a micro SD card, copy the contents of the SD card image zip file to a micro SD card.
 
-More details about the SD card image can be found at [this link]({{ "/alpine/" | prepend: site.baseurl }}).
+More details about the SD card image can be found at [this link]({% link alpine.md %}).
 
 Reprogramming FPGA
 -----

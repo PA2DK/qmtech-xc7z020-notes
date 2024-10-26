@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Multiband WSPR receiver
-permalink: /sdr-receiver-wspr-77-76/
 ---
 
 Interesting links
@@ -30,7 +29,7 @@ Hardware
 
 The FPGA configuration consists of sixteen identical digital down-converters (DDC). Their structure is shown in the following diagram:
 
-![WSPR receiver]({{ "/img/sdr-receiver-wspr-77-76.png" | prepend: site.baseurl }})
+![WSPR receiver]({% link img/sdr-receiver-wspr-77-76.png %})
 
 The DDC output contains complex 32-bit floating-point data at 375 samples per second and is directly compatible with the [WSPR decoder](https://github.com/pavel-demin/wsprd).
 
@@ -67,7 +66,7 @@ The measurement and correction of the frequency deviation is disabled by default
 Getting started
 -----
 
- - Download [SD card image zip file]({{ site.release-image }}) (more details about the SD card image can be found at [this link]({{ "/alpine/" | prepend: site.baseurl }})).
+ - Download [SD card image zip file]({{ site.release-image }}) (more details about the SD card image can be found at [this link]({% link alpine.md %})).
  - Copy the contents of the SD card image zip file to a micro SD card.
  - Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver_wspr_77_76` to the topmost directory on the SD card.
  - Install the micro SD card in the STEMlab SDR board and connect the power.
@@ -88,9 +87,7 @@ The bands list in [write-c2-files.cfg](https://github.com/pavel-demin/qmtech-xc7
 Building from source
 -----
 
-The installation of the development machine is described at [this link]({{ "/development-machine/" | prepend: site.baseurl }}).
-
-The structure of the source code and of the development chain is described at [this link]({{ "/led-blinker/" | prepend: site.baseurl }}).
+The structure of the source code and of the development chain is described at [this link]({% link led-blinker-77-76.md %}).
 
 Setting up the Vitis and Vivado environment:
 {% highlight bash %}

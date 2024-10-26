@@ -1,7 +1,6 @@
 ---
 layout: page
 title: ADC board
-permalink: /adc-board/
 ---
 
 Introduction
@@ -13,7 +12,7 @@ The KiCad files for the ADC board can be found in the [qmtech-adc repository](ht
 
 The ADC analog front-end is more or less as recommended by the ADC datasheet for frequencies below 50 MHz:
 
-![ADC input]({{ "/img/qmtech-ad9255-adc-input.png" | prepend: site.baseurl }})
+![ADC input]({% link img/qmtech-ad9255-adc-input.png %})
 
 The antenna input protection circuit is similar to [RF clipper](https://www.w0qe.com/Projects/rf_clipper_2016.html) with some improvements.
 
@@ -21,7 +20,7 @@ The 30 MHz low-pass filter uses 0805 2% capacitors and 1008 2% inductors availab
 
 The simulation results of the antenna input protection circuit and 30 MHz low-pass filter are shown in the following screenshot:
 
-![low-pass filter]({{ "/img/qmtech-ad9255-lpf.png" | prepend: site.baseurl }})
+![low-pass filter]({% link img/qmtech-ad9255-lpf.png %})
 
 The FPGA bank 33 is externally powered with 2.5 V to enable the internal termination resistors for the LVDS inputs.
 
@@ -31,11 +30,11 @@ The 5 V power input also contains a ferrite bead LC filter to filter out high fr
 
 The structure of the power subsystem is shown in the following diagram:
 
-![power]({{ "/img/qmtech-ad9255-power.png" | prepend: site.baseurl }})
+![power]({% link img/qmtech-ad9255-power.png %})
 
 A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool both the QMTECH XC7Z020 board and the ADC board. It cools the boards well without an additional heatsink even when the fan is powered at low voltage (5 V). The platform that I use to support the boards and fan is shown in the following image:
 
-![test setup]({{ "/img/qmtech-ad9255.jpg" | prepend: site.baseurl }})
+![test setup]({% link img/qmtech-ad9255.jpg %})
 
 Ordering ADC board from JLCPCB
 -----
@@ -50,11 +49,11 @@ Ordering ADC board from JLCPCB
 
 - Click "Yes" in the "Specify Layer Sequence" section and specify layer sequence as shown in the following screenshot:
 
-![layer sequence]({{ "/img/jlcpcb-layer-sequence.png" | prepend: site.baseurl }})
+![layer sequence]({% link img/jlcpcb-layer-sequence.png %})
 
 - Click "Yes" in the "Impedance Control" section and specify layer stackup as shown in the following screenshot:
 
-![layer sequence]({{ "/img/jlcpcb-layer-stackup.png" | prepend: site.baseurl }})
+![layer sequence]({% link img/jlcpcb-layer-stackup.png %})
 
 - Enable "PCB Assembly"
 
@@ -89,7 +88,7 @@ Ordering ADC board from JLCPCB
 Connecting ADC board to QMTECH XC7Z020 board
 -----
 
-Additional required connectors are listed at [this link]({{ "/components/" | prepend: site.baseurl }}).
+Additional required connectors are listed at [this link]({% link components.md %}).
 
 Resistors R14 and R15 should be unsoldered from the QMTECH XC7Z020 board.
 
@@ -116,4 +115,4 @@ A pre-built STL file can be found in the [ADC board release zip file]({{ site.ad
 
 The two parts of this enclosure are shown in the following image:
 
-![enclosure]({{ "/img/enclosure.png" | prepend: site.baseurl }})
+![enclosure]({% link img/enclosure.png %})
