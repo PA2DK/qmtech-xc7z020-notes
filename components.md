@@ -1,10 +1,8 @@
 ---
-layout: page
 title: List of components
 ---
 
-Aliexpress
------
+## Aliexpress
 
  - [QMTECH XC7Z020 board](https://www.aliexpress.com/item/1005005779045608.html)
 
@@ -14,8 +12,7 @@ Aliexpress
 
  - [12 cm fan](https://www.aliexpress.com/item/1005002978096606.html)
 
-Mouser Electronics
------
+## Mouser Electronics
 
  - [2x25 header strip, TSW-125-07-T-D](https://www.mouser.com/ProductDetail/200-TSW12507TD)
 

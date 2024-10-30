@@ -1,0 +1,16 @@
+export default {
+  title: "QMTECH XC7Z020 Notes",
+
+  description: "Notes on the QMTECH ZYNQ XC7Z020 starter kit",
+
+  baseurl: "https://pavel-demin.github.io/qmtech-xc7z020-notes",
+
+  source: "https://github.com/pavel-demin/qmtech-xc7z020-notes",
+  issues: "https://github.com/pavel-demin/qmtech-xc7z020-notes/issues",
+
+  release_image: "https://github.com/pavel-demin/qmtech-xc7z020-notes/releases/download/20240811/qmtech-xc7z020-alpine-3.20-armv7-20240811.zip",
+
+  adc_board_file: "https://github.com/pavel-demin/qmtech-adc/releases/download/20240614/qmtech-adc-20240614.zip",
+
+  sdr_smem_file: "https://github.com/pavel-demin/sdr-smem/releases/download/20240204/sdr-smem-20240204.zip"
+};

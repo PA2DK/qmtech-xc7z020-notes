@@ -1,10 +1,8 @@
 ---
-layout: page
 title: ADC board
 ---
 
-Introduction
------
+## Introduction
 
 The ADC board is based on the AD9255-80 ADC. The sample rate is 77.76 MSPS. It has antenna input protection and a 30 MHz low-pass filter.
 
@@ -12,7 +10,7 @@ The KiCad files for the ADC board can be found in the [qmtech-adc repository](ht
 
 The ADC analog front-end is more or less as recommended by the ADC datasheet for frequencies below 50 MHz:
 
-![ADC input]({% link img/qmtech-ad9255-adc-input.png %})
+![ADC input](/img/qmtech-ad9255-adc-input.png)
 
 The antenna input protection circuit is similar to [RF clipper](https://www.w0qe.com/Projects/rf_clipper_2016.html) with some improvements.
 
@@ -20,7 +18,7 @@ The 30 MHz low-pass filter uses 0805 2% capacitors and 1008 2% inductors availab
 
 The simulation results of the antenna input protection circuit and 30 MHz low-pass filter are shown in the following screenshot:
 
-![low-pass filter]({% link img/qmtech-ad9255-lpf.png %})
+![low-pass filter](/img/qmtech-ad9255-lpf.png)
 
 The FPGA bank 33 is externally powered with 2.5 V to enable the internal termination resistors for the LVDS inputs.
 
@@ -30,16 +28,15 @@ The 5 V power input also contains a ferrite bead LC filter to filter out high fr
 
 The structure of the power subsystem is shown in the following diagram:
 
-![power]({% link img/qmtech-ad9255-power.png %})
+![power](/img/qmtech-ad9255-power.png)
 
 A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool both the QMTECH XC7Z020 board and the ADC board. It cools the boards well without an additional heatsink even when the fan is powered at low voltage (5 V). The platform that I use to support the boards and fan is shown in the following image:
 
-![test setup]({% link img/qmtech-ad9255.jpg %})
+![test setup](/img/qmtech-ad9255.jpg)
 
-Ordering ADC board from JLCPCB
------
+## Ordering ADC board from JLCPCB
 
-- Download and unpack the [ADC board release zip file]({{ site.adc-board-release }})
+- Download and unpack the [ADC board release zip file]({{ site.adc_board_file }})
 
 - Log in to [jlcpcb.com](https://jlcpcb.com)
 
@@ -49,11 +46,11 @@ Ordering ADC board from JLCPCB
 
 - Click "Yes" in the "Specify Layer Sequence" section and specify layer sequence as shown in the following screenshot:
 
-![layer sequence]({% link img/jlcpcb-layer-sequence.png %})
+![layer sequence](/img/jlcpcb-layer-sequence.png)
 
 - Click "Yes" in the "Impedance Control" section and specify layer stackup as shown in the following screenshot:
 
-![layer sequence]({% link img/jlcpcb-layer-stackup.png %})
+![layer sequence](/img/jlcpcb-layer-stackup.png)
 
 - Enable "PCB Assembly"
 
@@ -85,10 +82,9 @@ Ordering ADC board from JLCPCB
 
 - Select the correct addresses, shipping and payment methods on the checkout screens
 
-Connecting ADC board to QMTECH XC7Z020 board
------
+## Connecting ADC board to QMTECH XC7Z020 board
 
-Additional required connectors are listed at [this link]({% link components.md %}).
+Additional required connectors are listed at [this link](/components.md).
 
 Resistors R14 and R15 should be unsoldered from the QMTECH XC7Z020 board.
 
@@ -104,15 +100,14 @@ The 2x25 socket strip on the ADC board should be connected to the extension conn
 
 The 3.3V and GND pins of the 1x2 header strip on the ADC board should be connected with a double wire to the 3.3V and GND pins of the extension connector JP5 on the QMTECH XC7Z020 board.
 
-3D printable enclosure
------
+## 3D printable enclosure
 
 This 3D printable enclosure is designed by Simon S53ZO using [OpenSCAD](https://openscad.org) and [YAPP_Box](https://github.com/mrWheel/YAPP_Box).
 
 The OpenSCAD files for this enclosure can be found in the [qmtech-adc repository](https://github.com/pavel-demin/qmtech-adc/tree/main/enclosures). These OpenSCAD files can be used to modify this enclosure.
 
-A pre-built STL file can be found in the [ADC board release zip file]({{ site.adc-board-release }}). This pre-built STL file can be used to print this enclosure with a 3D printer.
+A pre-built STL file can be found in the [ADC board release zip file]({{ site.adc_board_file }}). This pre-built STL file can be used to print this enclosure with a 3D printer.
 
 The two parts of this enclosure are shown in the following image:
 
-![enclosure]({% link img/enclosure.png %})
+![enclosure](/img/enclosure.png)

@@ -1,17 +1,14 @@
 ---
-layout: page
 title: Alpine with pre-built applications
 ---
 
-Introduction
------
+## Introduction
 
 To simplify maintenance and distribution of the pre-built applications described in the QMTECH XC7Z020 notes, I've put together a bootable SD card image based on the lightweight [Alpine Linux](https://alpinelinux.org) distribution.
 
-Getting started
------
+## Getting started
 
- - Download [SD card image zip file]({{ site.release-image }}).
+ - Download [SD card image zip file]({{ site.release_image }}).
  - Copy the contents of the SD card image zip file to a micro SD card.
  - Optionally, to start one of the applications automatically at boot time, copy its `start.sh` file from `apps/<application>` to the topmost directory on the SD card.
  - Install the micro SD card in the QMTECH XC7Z020 board and connect the power.
@@ -19,8 +16,7 @@ Getting started
 
 The default password for the `root` account is `changeme`.
 
-Network configuration
------
+## Network configuration
 
 Wi-Fi is by default configured in hotspot mode with the network name (SSID) and password both set to `QMTECH XC7Z020`. When in hotspot mode, the IP address of the QMTECH XC7Z020 board is [192.168.42.1](http://192.168.42.1).
 
@@ -34,13 +30,12 @@ From systems with enabled DNS Service Discovery (DNS-SD), the QMTECH XC7Z020 boa
 
 In the local networks with enabled local DNS, the QMTECH XC7Z020 board can also be accessed as `sdr-a8xxxx`.
 
-Useful commands
------
+## Useful commands
 
 The [Alpine Wiki](https://wiki.alpinelinux.org) contains a lot of information about administrating [Alpine Linux](https://alpinelinux.org). The following is a list of some useful commands.
 
 Switching to client Wi-Fi mode:
-{% highlight bash %}
+```bash
 # configure WPA supplicant
 wpa_passphrase SSID PASSPHRASE > /etc/wpa_supplicant/wpa_supplicant.conf
 
@@ -49,33 +44,33 @@ wpa_passphrase SSID PASSPHRASE > /etc/wpa_supplicant/wpa_supplicant.conf
 
 # save configuration changes to SD card
 lbu commit -d
-{% endhighlight %}
+```
 
 Switching to hotspot Wi-Fi mode:
-{% highlight bash %}
+```bash
 # configure services for hotspot Wi-Fi mode
 ./wifi/hotspot.sh
 
 # save configuration changes to SD card
 lbu commit -d
-{% endhighlight %}
+```
 
 Changing password:
-{% highlight bash %}
+```bash
 passwd
 
 lbu commit -d
-{% endhighlight %}
+```
 
 Installing packages:
-{% highlight bash %}
+```bash
 apk add python3
 
 lbu commit -d
-{% endhighlight %}
+```
 
 Editing a file:
-{% highlight bash %}
+```bash
 # make SD card writable
 rw
 
@@ -84,4 +79,4 @@ nano apps/sdr_receiver_hpsdr/start.sh
 
 # make SD card read-only
 ro
-{% endhighlight %}
+```
