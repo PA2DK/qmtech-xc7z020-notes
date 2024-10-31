@@ -8,9 +8,12 @@ export default {
   source: "https://github.com/pavel-demin/qmtech-xc7z020-notes",
   issues: "https://github.com/pavel-demin/qmtech-xc7z020-notes/issues",
 
-  release_image: "https://github.com/pavel-demin/qmtech-xc7z020-notes/releases/download/20240811/qmtech-xc7z020-alpine-3.20-armv7-20240811.zip",
+  release_image:
+    "https://github.com/pavel-demin/qmtech-xc7z020-notes/releases/download/20240811/qmtech-xc7z020-alpine-3.20-armv7-20240811.zip",
 
-  adc_board_file: "https://github.com/pavel-demin/qmtech-adc/releases/download/20240614/qmtech-adc-20240614.zip",
+  adc_board_file:
+    "https://github.com/pavel-demin/qmtech-adc/releases/download/20240614/qmtech-adc-20240614.zip",
 
-  sdr_smem_file: "https://github.com/pavel-demin/sdr-smem/releases/download/20240204/sdr-smem-20240204.zip"
+  sdr_smem_file:
+    "https://github.com/pavel-demin/sdr-smem/releases/download/20240204/sdr-smem-20240204.zip",
 };
