@@ -23,7 +23,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
-  eleventyConfig.addWatchTarget("./tailwind.config.js");
   eleventyConfig.addTemplateFormats("css");
 
   eleventyConfig.addExtension("css", {

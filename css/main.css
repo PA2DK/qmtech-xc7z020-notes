@@ -3,10 +3,23 @@ layout: identity.liquid
 ---
 
 @tailwind base;
-@tailwind components;
 
 body {
   @apply prose prose-neutral mx-auto bg-neutral-100 pb-8;
+}
+
+pre {
+  @apply overflow-x-auto rounded-md bg-neutral-100 px-2 py-1;
+}
+
+tbody > tr:nth-child(2n),
+thead > tr {
+  @apply bg-neutral-100;
+}
+
+td,
+th {
+  @apply border border-solid border-neutral-300 px-2 py-1;
 }
 
 .content {

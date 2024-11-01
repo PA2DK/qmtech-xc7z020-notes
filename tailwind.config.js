@@ -5,19 +5,22 @@ const customization = (theme) => ({
   DEFAULT: {
     css: {
       maxWidth: "100ch",
+      lineHeight: false,
       h1: {
-        fontWeight: "inherit",
+        fontWeight: false,
       },
       h2: {
-        fontWeight: "inherit",
+        fontWeight: false,
       },
-      pre: {
-        fontSize: "inherit",
+      table: {
+        width: false,
+        fontSize: false,
       },
+      pre: false,
       "code::before": false,
       "code::after": false,
       code: {
-        fontSize: "inherit",
+        fontSize: false,
       },
       a: {
         color: theme("colors.rose.700"),
@@ -26,12 +29,6 @@ const customization = (theme) => ({
           textDecoration: "underline",
         },
       },
-    },
-  },
-  neutral: {
-    css: {
-      "--tw-prose-pre-code": "inherit",
-      "--tw-prose-pre-bg": theme("colors.neutral.100"),
     },
   },
 });
