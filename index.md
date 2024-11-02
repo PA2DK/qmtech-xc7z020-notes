@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default.html
 ---
 
 1. [List of components](/components.md)
