@@ -44,8 +44,6 @@ The [decode-wspr.sh](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/ma
 1-59/2 * * * * cd /dev/shm && /media/mmcblk0p1/apps/sdr_receiver_wspr_77_76/decode-wspr.sh >> decode-wspr.log 2>&1 &
 ```
 
-The [transmit-wspr-message.c](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_wspr_77_76/app/transmit-wspr-message.c) program transmits WSPR messages.
-
 ## GPS interface
 
 A GPS module can be used for the time synchronization and for the automatic measurement and correction of the frequency deviation.
