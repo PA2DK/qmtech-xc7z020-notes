@@ -6,9 +6,9 @@ title: Multiband FT8 receiver
 
 This project implements a standalone multiband FT8 receiver with all the FT8 signal processing done by the QMTECH XC7Z020 board in the following way:
 
- - simultaneously record FT8 signals from sixteen bands
- - use FPGA for all the conversions needed to produce .c2 files (complex 32-bit floating-point data at 4000 samples per second)
- - use on-board CPU to process the .c2 files with the [FT8 decoder](https://github.com/pavel-demin/ft8d)
+- simultaneously record FT8 signals from sixteen bands
+- use FPGA for all the conversions needed to produce .c2 files (complex 32-bit floating-point data at 4000 samples per second)
+- use on-board CPU to process the .c2 files with the [FT8 decoder](https://github.com/pavel-demin/ft8d)
 
 ## Hardware
 
@@ -27,6 +27,7 @@ The [write-c2-files.c](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/
 The recorded .c2 files are processed with the [FT8 decoder](https://github.com/pavel-demin/ft8d).
 
 The [decode-ft8.sh](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/decode-ft8.sh) script launches `write-c2-files` and `ft8d` one after another. This script is run every minute by the following cron entry in [ft8.cron](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/ft8.cron):
+
 ```bash
 * * * * * cd /dev/shm && /media/mmcblk0p1/apps/sdr_receiver_ft8_77_76/decode-ft8.sh >> decode-ft8.log 2>&1 &
 ```
@@ -38,16 +39,17 @@ A GPS module can be used for the time synchronization and for the automatic meas
 The PPS signal should be connected to the pin 5 of the extension connector JP5.
 
 The measurement and correction of the frequency deviation is disabled by default and should be enabled by uncommenting the following line in [ft8.cron](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/ft8.cron):
+
 ```bash
 * * * * * cd /dev/shm && /media/mmcblk0p1/apps/common_tools/update-corr.sh 77.76 >> update-corr.log 2>&1 &
 ```
 
 ## Getting started
 
- - Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine.md)).
- - Copy the contents of the SD card image zip file to a micro SD card.
- - Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver_ft8_77_76` to the topmost directory on the SD card.
- - Install the micro SD card in the QMTECH XC7Z020 board and connect the power.
+- Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine.md)).
+- Copy the contents of the SD card image zip file to a micro SD card.
+- Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver_ft8_77_76` to the topmost directory on the SD card.
+- Install the micro SD card in the QMTECH XC7Z020 board and connect the power.
 
 ## Configuring FT8 receiver
 
@@ -64,22 +66,26 @@ The bands list in [write-c2-files.cfg](https://github.com/pavel-demin/qmtech-xc7
 The structure of the source code and of the development chain is described at [this link](/led-blinker-77-76.md).
 
 Setting up the Vitis and Vivado environment:
+
 ```bash
 source /opt/Xilinx/Vitis/2023.1/settings64.sh
 ```
 
 Cloning the source code repository:
+
 ```bash
 git clone https://github.com/pavel-demin/qmtech-xc7z020-notes
 cd qmtech-xc7z020-notes
 ```
 
 Building `sdr_receiver_ft8_77_76.bit`:
+
 ```bash
 make NAME=sdr_receiver_ft8_77_76 bit
 ```
 
 Building SD card image zip file:
+
 ```bash
 source helpers/build-all.sh
 ```

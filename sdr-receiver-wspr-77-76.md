@@ -6,18 +6,18 @@ title: Multiband WSPR receiver
 
 Some interesting links on the Weak Signal Propagation Reporter (WSPR) protocol:
 
- - [WSPRnet](https://wsprnet.org)
- - [WSPRnet map](https://wsprnet.org/drupal/wsprnet/map)
- - [WSPRnet protocol](https://wsprnet.org/automate.txt)
+- [WSPRnet](https://wsprnet.org)
+- [WSPRnet map](https://wsprnet.org/drupal/wsprnet/map)
+- [WSPRnet protocol](https://wsprnet.org/automate.txt)
 
 ## Short description
 
 This project implements a standalone multiband WSPR receiver with all the WSPR signal processing done by STEMlab SDR in the following way:
 
- - simultaneously record WPSR signals from sixteen bands
- - use FPGA for all the conversions needed to produce .c2 files (complex 32-bit floating-point data at 375 samples per second)
- - use on-board CPU to process the .c2 files with the [WSPR decoder](https://github.com/pavel-demin/wsprd)
- - upload decoded data to [wsprnet.org](https://wsprnet.org)
+- simultaneously record WPSR signals from sixteen bands
+- use FPGA for all the conversions needed to produce .c2 files (complex 32-bit floating-point data at 375 samples per second)
+- use on-board CPU to process the .c2 files with the [WSPR decoder](https://github.com/pavel-demin/wsprd)
+- upload decoded data to [wsprnet.org](https://wsprnet.org)
 
 With this configuration, it is enough to connect STEMlab SDR to an antenna and to a network. After switching STEMlab SDR on, it will automatically start operating as a WSPR receiver.
 
@@ -40,6 +40,7 @@ The recorded .c2 files are processed with the [WSPR decoder](https://github.com/
 The decoded data are uploaded to [wsprnet.org](https://wsprnet.org) using [curl](https://curl.haxx.se).
 
 The [decode-wspr.sh](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_wspr_77_76/app/decode-wspr.sh) script launches `write-c2-files`, `wsprd` and `curl` one after another. This script is run every two minutes by the following cron entry in [wspr.cron](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_wspr_77_76/app/wspr.cron):
+
 ```bash
 1-59/2 * * * * cd /dev/shm && /media/mmcblk0p1/apps/sdr_receiver_wspr_77_76/decode-wspr.sh >> decode-wspr.log 2>&1 &
 ```
@@ -51,16 +52,17 @@ A GPS module can be used for the time synchronization and for the automatic meas
 The PPS signal should be connected to the pin 5 of the extension connector JP5.
 
 The measurement and correction of the frequency deviation is disabled by default and should be enabled by uncommenting the following line in [wspr.cron](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_wspr_77_76/app/wspr.cron):
+
 ```bash
 1-59/2 * * * * cd /dev/shm && /media/mmcblk0p1/apps/common_tools/update-corr.sh 77.76 >> update-corr.log 2>&1 &
 ```
 
 ## Getting started
 
- - Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine.md)).
- - Copy the contents of the SD card image zip file to a micro SD card.
- - Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver_wspr_77_76` to the topmost directory on the SD card.
- - Install the micro SD card in the STEMlab SDR board and connect the power.
+- Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine.md)).
+- Copy the contents of the SD card image zip file to a micro SD card.
+- Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver_wspr_77_76` to the topmost directory on the SD card.
+- Install the micro SD card in the STEMlab SDR board and connect the power.
 
 ## Configuring WSPR receiver
 
@@ -79,22 +81,26 @@ The bands list in [write-c2-files.cfg](https://github.com/pavel-demin/qmtech-xc7
 The structure of the source code and of the development chain is described at [this link](/led-blinker-77-76.md).
 
 Setting up the Vitis and Vivado environment:
+
 ```bash
 source /opt/Xilinx/Vitis/2023.1/settings64.sh
 ```
 
 Cloning the source code repository:
+
 ```bash
 git clone https://github.com/pavel-demin/qmtech-xc7z020-notes
 cd qmtech-xc7z020-notes
 ```
 
 Building `sdr_receiver_wspr_77_76.bit`:
+
 ```bash
 make NAME=sdr_receiver_wspr_77_76 bit
 ```
 
 Building SD card image zip file:
+
 ```bash
 source helpers/build-all.sh
 ```
