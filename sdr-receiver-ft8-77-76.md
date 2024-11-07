@@ -46,7 +46,7 @@ The measurement and correction of the frequency deviation is disabled by default
 
 ## Getting started
 
-- Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine.md)).
+- Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine/)).
 - Copy the contents of the SD card image zip file to a micro SD card.
 - Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver_ft8_77_76` to the topmost directory on the SD card.
 - Install the micro SD card in the QMTECH XC7Z020 board and connect the power.
@@ -63,7 +63,7 @@ The bands list in [write-c2-files.cfg](https://github.com/pavel-demin/qmtech-xc7
 
 ## Building from source
 
-The structure of the source code and of the development chain is described at [this link](/led-blinker-77-76.md).
+The structure of the source code and of the development chain is described at [this link](/led-blinker-77-76/).
 
 Setting up the Vitis and Vivado environment:
 

@@ -45,7 +45,7 @@ I use simple indoor antennas made from a single loop of non-coaxial wire. Their 
 ## Getting started
 
 - Connect an antenna to the SMA connector on the ADC board.
-- Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine.md)).
+- Download [SD card image zip file]({{ site.release_image }}) (more details about the SD card image can be found at [this link](/alpine/)).
 - Copy the contents of the SD card image zip file to a micro SD card.
 - Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver` to the topmost directory on the SD card.
 - Install the micro SD card in the QMTECH XC7Z020 board and connect the power.
@@ -72,7 +72,7 @@ I use simple indoor antennas made from a single loop of non-coaxial wire. Their 
 
 ## Building from source
 
-The structure of the source code and of the development chain is described at [this link](/led-blinker-77-76.md).
+The structure of the source code and of the development chain is described at [this link](/led-blinker-77-76/).
 
 Setting up the Vitis and Vivado environment:
 

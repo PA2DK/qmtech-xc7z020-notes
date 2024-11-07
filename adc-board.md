@@ -84,7 +84,7 @@ A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool
 
 ## Connecting ADC board to QMTECH XC7Z020 board
 
-Additional required connectors are listed at [this link](/components.md).
+Additional required connectors are listed at [this link](/components/).
 
 Resistors R14 and R15 should be unsoldered from the QMTECH XC7Z020 board.
 
