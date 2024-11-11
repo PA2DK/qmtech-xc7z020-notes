@@ -1,6 +1,4 @@
----
-title: Links
----
+# Links
 
 - [Documentation for QMTECH XC7Z020](https://github.com/ChinaQMTECH/QMTECH_XC7Z020_STARTER_KIT_V01)
 

@@ -1,7 +1,3 @@
----
-permalink: /
----
-
 1. [List of components](/components/)
 1. [Links](/links/)
 1. [ADC board](/adc-board/)

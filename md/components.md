@@ -1,6 +1,4 @@
----
-title: List of components
----
+# List of components
 
 ## Aliexpress
 
