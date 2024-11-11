@@ -2,8 +2,6 @@ site_title: QMTECH XC7Z020 Notes
 
 description: Notes on the QMTECH ZYNQ XC7Z020 starter kit
 
-baseurl: https://pavel-demin.github.io/qmtech-xc7z020-notes
-
 source: https://github.com/pavel-demin/qmtech-xc7z020-notes
 issues: https://github.com/pavel-demin/qmtech-xc7z020-notes/issues
 
