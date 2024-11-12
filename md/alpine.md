@@ -6,7 +6,7 @@ To simplify maintenance and distribution of the pre-built applications described
 
 ## Getting started
 
-- Download [SD card image zip file](release_image).
+- Download [SD card image zip file]($release_image$).
 - Copy the contents of the SD card image zip file to a micro SD card.
 - Optionally, to start one of the applications automatically at boot time, copy its `start.sh` file from `apps/<application>` to the topmost directory on the SD card.
 - Install the micro SD card in the QMTECH XC7Z020 board and connect the power.
@@ -22,7 +22,7 @@ The wired interface is by default configured to request an IP address via DHCP. 
 
 The MAC address of the wired interface can be changed by editing the mac.txt file.
 
-The configuration of the IP addresses is in [/etc/dhcpcd.conf](https://github.com/pavel-demin/qmtech-xc7z020-notes/blob/main/alpine/etc/dhcpcd.conf). More information about [/etc/dhcpcd.conf](https://github.com/pavel-demin/qmtech-xc7z020-notes/blob/main/alpine/etc/dhcpcd.conf) can be found at [this link](https://www.mankier.com/5/dhcpcd.conf).
+The configuration of the IP addresses is in [/etc/dhcpcd.conf]($source$/alpine/etc/dhcpcd.conf). More information about [/etc/dhcpcd.conf]($source$/alpine/etc/dhcpcd.conf) can be found at [this link](https://www.mankier.com/5/dhcpcd.conf).
 
 From systems with enabled DNS Service Discovery (DNS-SD), the QMTECH XC7Z020 board can be accessed as `sdr-a8xxxx.local`, where `a8xxxx` are the last 6 characters from the MAC address written on the Ethernet connector.
 

@@ -34,7 +34,7 @@ A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool
 
 ## Ordering ADC board from JLCPCB
 
-- Download and unpack the [ADC board release zip file](adc_board_file)
+- Download and unpack the [ADC board release zip file]($adc_board_file$)
 
 - Log in to [jlcpcb.com](https://jlcpcb.com)
 
@@ -104,7 +104,7 @@ This 3D printable enclosure is designed by Simon S53ZO using [OpenSCAD](https://
 
 The OpenSCAD files for this enclosure can be found in the [qmtech-adc repository](https://github.com/pavel-demin/qmtech-adc/tree/main/enclosures). These OpenSCAD files can be used to modify this enclosure.
 
-A pre-built STL file can be found in the [ADC board release zip file](adc_board_file). This pre-built STL file can be used to print this enclosure with a 3D printer.
+A pre-built STL file can be found in the [ADC board release zip file]($adc_board_file$). This pre-built STL file can be used to print this enclosure with a 3D printer.
 
 The two parts of this enclosure are shown in the following image:
 

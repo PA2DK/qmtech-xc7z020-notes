@@ -42,11 +42,11 @@ The source code is available at
 
 This repository contains the following components:
 
-- [Makefile](https://github.com/pavel-demin/qmtech-xc7z020-notes/blob/main/Makefile) that builds everything (almost)
-- [cfg](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/cfg) directory with constraints and board definition files
-- [cores](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/cores) directory with IP cores written in Verilog
-- [projects](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects) directory with Vivado projects written in Tcl
-- [scripts](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/scripts) directory with
+- [Makefile]($source$/Makefile) that builds everything (almost)
+- [cfg]($source$/cfg) directory with constraints and board definition files
+- [cores]($source$/cores) directory with IP cores written in Verilog
+- [projects]($source$/projects) directory with Vivado projects written in Tcl
+- [scripts]($source$/scripts) directory with
   - Tcl scripts for Vivado and SDK
   - shell script that builds an SD card image
 
@@ -56,7 +56,7 @@ All steps of the development chain and the corresponding scripts are shown in th
 
 ## Syntactic sugar for IP cores
 
-The [projects/led_blinker_77_76](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/led_blinker_77_76) directory contains one Tcl file [block_design.tcl](https://github.com/pavel-demin/qmtech-xc7z020-notes/blob/main/projects/led_blinker_77_76/block_design.tcl) that instantiates, configures and interconnects all the needed IP cores.
+The [projects/led_blinker_77_76]($source$/projects/led_blinker_77_76) directory contains one Tcl file [block_design.tcl]($source$/projects/led_blinker_77_76/block_design.tcl) that instantiates, configures and interconnects all the needed IP cores.
 
 By default, the IP core instantiation and configuration commands are quite verbose:
 
@@ -78,7 +78,7 @@ cell xilinx.com:ip:processing_system7 ps_0 {
 }
 ```
 
-The `cell` command and other helper commands are defined in the [scripts/project.tcl](https://github.com/pavel-demin/qmtech-xc7z020-notes/blob/main/scripts/project.tcl) script.
+The `cell` command and other helper commands are defined in the [scripts/project.tcl]($source$/scripts/project.tcl) script.
 
 ## Getting started
 
@@ -109,7 +109,7 @@ Building an SD card image:
 sudo sh scripts/alpine.sh
 ```
 
-A pre-built SD card image can be downloaded from [this link](release_image).
+A pre-built SD card image can be downloaded from [this link]($release_image$).
 
 To write the image to a micro SD card, copy the contents of the SD card image zip file to a micro SD card.
 

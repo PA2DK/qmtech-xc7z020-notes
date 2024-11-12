@@ -16,15 +16,15 @@ The FPGA configuration consists of sixteen identical digital down-converters (DD
 
 The DDC output contains complex 32-bit floating-point data at 4000 samples per second.
 
-The [projects/sdr_receiver_ft8_77_76](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76) directory contains two Tcl files: [block_design.tcl](https://github.com/pavel-demin/qmtech-xc7z020-notes/blob/main/projects/sdr_receiver_ft8_77_76/block_design.tcl) and [rx.tcl](https://github.com/pavel-demin/qmtech-xc7z020-notes/blob/main/projects/sdr_receiver_ft8_77_76/rx.tcl). The code in these files instantiates, configures and interconnects all the needed IP cores.
+The [projects/sdr_receiver_ft8_77_76]($source$/projects/sdr_receiver_ft8_77_76) directory contains two Tcl files: [block_design.tcl]($source$/projects/sdr_receiver_ft8_77_76/block_design.tcl) and [rx.tcl]($source$/projects/sdr_receiver_ft8_77_76/rx.tcl). The code in these files instantiates, configures and interconnects all the needed IP cores.
 
 ## Software
 
-The [write-c2-files.c](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/write-c2-files.c) program accumulates 236000 samples at 4000 samples per second for each of the sixteen bands and saves the samples to sixteen .c2 files.
+The [write-c2-files.c]($source$/projects/sdr_receiver_ft8_77_76/app/write-c2-files.c) program accumulates 236000 samples at 4000 samples per second for each of the sixteen bands and saves the samples to sixteen .c2 files.
 
 The recorded .c2 files are processed with the [FT8 decoder](https://github.com/pavel-demin/ft8d).
 
-The [decode-ft8.sh](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/decode-ft8.sh) script launches `write-c2-files` and `ft8d` one after another. This script is run every minute by the following cron entry in [ft8.cron](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/ft8.cron):
+The [decode-ft8.sh]($source$/projects/sdr_receiver_ft8_77_76/app/decode-ft8.sh) script launches `write-c2-files` and `ft8d` one after another. This script is run every minute by the following cron entry in [ft8.cron]($source$/projects/sdr_receiver_ft8_77_76/app/ft8.cron):
 
 ```bash
 * * * * * cd /dev/shm && /media/mmcblk0p1/apps/sdr_receiver_ft8_77_76/decode-ft8.sh >> decode-ft8.log 2>&1 &
@@ -36,7 +36,7 @@ A GPS module can be used for the time synchronization and for the automatic meas
 
 The PPS signal should be connected to the pin 5 of the extension connector JP5.
 
-The measurement and correction of the frequency deviation is disabled by default and should be enabled by uncommenting the following line in [ft8.cron](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/ft8.cron):
+The measurement and correction of the frequency deviation is disabled by default and should be enabled by uncommenting the following line in [ft8.cron]($source$/projects/sdr_receiver_ft8_77_76/app/ft8.cron):
 
 ```bash
 * * * * * cd /dev/shm && /media/mmcblk0p1/apps/common_tools/update-corr.sh 77.76 >> update-corr.log 2>&1 &
@@ -44,7 +44,7 @@ The measurement and correction of the frequency deviation is disabled by default
 
 ## Getting started
 
-- Download [SD card image zip file](release_image) (more details about the SD card image can be found at [this link](/alpine/)).
+- Download [SD card image zip file]($release_image$) (more details about the SD card image can be found at [this link](/alpine/)).
 - Copy the contents of the SD card image zip file to a micro SD card.
 - Optionally, to start the application automatically at boot time, copy its `start.sh` file from `apps/sdr_receiver_ft8_77_76` to the topmost directory on the SD card.
 - Install the micro SD card in the QMTECH XC7Z020 board and connect the power.
@@ -53,11 +53,11 @@ The measurement and correction of the frequency deviation is disabled by default
 
 All the configuration files and scripts can be found in the `apps/sdr_receiver_ft8_77_76` directory on the SD card.
 
-To enable uploads, the `CALL` and `GRID` variables should be specified in [upload-ft8.sh](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/upload-ft8.sh#L4-L5). These variables should be set to the call sign of the receiving station and its 6-character Maidenhead grid locator.
+To enable uploads, the `CALL` and `GRID` variables should be specified in [upload-ft8.sh]($source$/projects/sdr_receiver_ft8_77_76/app/upload-ft8.sh#L4-L5). These variables should be set to the call sign of the receiving station and its 6-character Maidenhead grid locator.
 
-The frequency correction ppm value can be adjusted by editing the corr parameter in [write-c2-files.cfg](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/write-c2-files.cfg).
+The frequency correction ppm value can be adjusted by editing the corr parameter in [write-c2-files.cfg]($source$/projects/sdr_receiver_ft8_77_76/app/write-c2-files.cfg).
 
-The bands list in [write-c2-files.cfg](https://github.com/pavel-demin/qmtech-xc7z020-notes/tree/main/projects/sdr_receiver_ft8_77_76/app/write-c2-files.cfg) contains all the FT8 frequencies. They can be enabled or disabled by uncommenting or by commenting the corresponding lines.
+The bands list in [write-c2-files.cfg]($source$/projects/sdr_receiver_ft8_77_76/app/write-c2-files.cfg) contains all the FT8 frequencies. They can be enabled or disabled by uncommenting or by commenting the corresponding lines.
 
 ## Building from source
 
