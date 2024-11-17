@@ -72,7 +72,7 @@ A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool
 
 - Click "Next" on the "Component Placements" screen
 
-- In the "Product Description" section select "Reserch\Education\DIY\Entertainment" and "Development Board - HS Code 847330"
+- In the "Product Description" section select "Reserch\\Education\\DIY\\Entertainment" and "Development Board - HS Code 847330"
 
 - Click "Save to cart"
 
