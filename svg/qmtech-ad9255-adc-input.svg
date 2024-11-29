@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <path d="m315 45h-40" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m398 90h-73" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m325 60h50v60h53" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m315 75h-20v10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m320 44v32" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m325 65a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 80a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 85a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 90a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 45a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.503 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 50a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 39.997a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 55a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 60a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m315 55a2.5 2.5 0 0 0 2.17-1.25 2.5 2.5 0 0 0 0-2.5 2.5 2.5 0 0 0-2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m315 50a2.5 2.5 0 0 0 2.17-1.25 2.5 2.5 0 0 0 0-2.5 2.5 2.5 0 0 0-2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m315 60a2.5 2.5 0 0 0 2.17-1.25 2.5 2.5 0 0 0 0-2.5 2.5 2.5 0 0 0-2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m315 65a2.5 2.5 0 0 0 2.17-1.25 2.5 2.5 0 0 0 0-2.5 2.5 2.5 0 0 0-2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m315 70a2.5 2.5 0 0 0 2.17-1.25 2.5 2.5 0 0 0 0-2.5 2.5 2.5 0 0 0-2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m315 75a2.5 2.5 0 0 0 2.17-1.25 2.5 2.5 0 0 0 0-2.5 2.5 2.5 0 0 0-2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m410 137h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m410 133h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <rect x="337" y="68" width="6" height="14" fill="none" stroke="#000000"/>
+ <path d="m340 52v16" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m340 29.497v8.5" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m340 82v8" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m405 120v13" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m405 137v13" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m470 137h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m470 133h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m465 120v13" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m465 137v13" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m442 120h58" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m472 90.003h28" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m412 90h46" fill="none" stroke="#000000" stroke-width="1px"/>
+ <text x="320" y="23" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">1:4</tspan></text>
+ <text x="505" y="30" fill="#000000" font-family="Roboto Condensed" font-size="14px" style="line-height:1.25"><tspan sodipodi:role="line">IN+</tspan></text>
+ <text x="505" y="90" fill="#000000" font-family="Roboto Condensed" font-size="14px" style="line-height:1.25"><tspan sodipodi:role="line">IN-</tspan></text>
+ <text x="505" y="120" fill="#000000" font-family="Roboto Condensed" font-size="14px" style="line-height:1.25"><tspan sodipodi:role="line">VCM</tspan></text>
+ <text x="405" y="113" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">0.1u</tspan></text>
+ <text x="465" y="113" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">1u</tspan></text>
+ <text x="435" y="113" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">51</tspan></text>
+ <text x="405" y="83" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">10</tspan></text>
+ <text x="357" y="80" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">150</tspan></text>
+ <rect x="337" y="37.997" width="6" height="14" fill="none" stroke="#000000"/>
+ <text x="357" y="50" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">150</tspan></text>
+ <path d="m325 34.997a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 75a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <path d="m325 70a2.5 2.5 0 0 1-2.17-1.25 2.5 2.5 0 0 1 0-2.5 2.5 2.5 0 0 1 2.17-1.25" fill="none" stroke="#000000"/>
+ <rect transform="rotate(90)" x="117" y="-442" width="6" height="14" fill="none" stroke="#000000"/>
+ <rect transform="rotate(90)" x="87" y="-412" width="6" height="14" fill="none" stroke="#000000"/>
+ <text x="465" y="83.003" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">10</tspan></text>
+ <text x="452" y="64" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">10p</tspan></text>
+ <rect transform="rotate(90)" x="87.003" y="-472" width="6" height="14" fill="none" stroke="#000000"/>
+ <path d="m398 30h-73" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m472 30h28" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m412 29.997h46" fill="none" stroke="#000000" stroke-width="1px"/>
+ <text x="405" y="22.997" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">10</tspan></text>
+ <rect transform="rotate(90)" x="26.997" y="-412" width="6" height="14" fill="none" stroke="#000000"/>
+ <text x="465" y="23" fill="#000000" font-family="Roboto Condensed" font-size="14px" text-align="center" text-anchor="middle" style="line-height:1.25"><tspan sodipodi:role="line">10</tspan></text>
+ <rect transform="rotate(90)" x="27" y="-472" width="6" height="14" fill="none" stroke="#000000"/>
+ <path d="m410 150h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m470 150h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m440 62h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m440 58h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="M 435,29.997 V 58" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m435 62v28" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m300 85h-10" fill="none" stroke="#000000" stroke-width="1px"/>
+ <path d="m341 60a1 1 0 0 1-0.97 1 1 1 0 0 1-1.03-0.942 1 1 0 0 1 0.91-1.054 1 1 0 0 1 1.08 0.88z" fill="none" stroke="#000000"/>
+ <path d="m341 29.997a1 1 0 0 1-0.97 1 1 1 0 0 1-1.03-0.942 1 1 0 0 1 0.91-1.054 1 1 0 0 1 1.08 0.88z" fill="none" stroke="#000000"/>
+ <path d="m341 90a1 1 0 0 1-0.97 1 1 1 0 0 1-1.03-0.942 1 1 0 0 1 0.91-1.054 1 1 0 0 1 1.08 0.88z" fill="none" stroke="#000000"/>
+ <path d="m436 90a1 1 0 0 1-0.97 1 1 1 0 0 1-1.03-0.942 1 1 0 0 1 0.91-1.054 1 1 0 0 1 1.08 0.88z" fill="none" stroke="#000000"/>
+ <path d="m406.01 120.12a1 1 0 0 1-0.97 1 1 1 0 0 1-1.03-0.94 1 1 0 0 1 0.91-1.06 1 1 0 0 1 1.08 0.88z" fill="none" stroke="#000000"/>
+ <path d="m466 120a1 1 0 0 1-0.97 1 1 1 0 0 1-1.03-0.94 1 1 0 0 1 0.91-1.06 1 1 0 0 1 1.08 0.88z" fill="none" stroke="#000000"/>
+ <path d="m436 29.997a1 1 0 0 1-0.97 1 1 1 0 0 1-1.03-0.942 1 1 0 0 1 0.91-1.054 1 1 0 0 1 1.08 0.88z" fill="none" stroke="#000000"/>
+</svg>
