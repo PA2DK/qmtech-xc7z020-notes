@@ -46,7 +46,7 @@ A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool
 
 ![layer sequence](/img/jlcpcb-layer-sequence.png)
 
-- Click "Yes" in the "Impedance Control" section and specify layer stackup as shown in the following screenshot:
+- Click "Yes" in the "Specify Stackup" section and specify layer stackup as shown in the following screenshot:
 
 ![layer sequence](/img/jlcpcb-layer-stackup.png)
 
@@ -54,7 +54,7 @@ A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool
 
 - Select 2 or 5 assembled boards in the "PCBA Qty" section
 
-- Click "Confirm"
+- Click "Next"
 
 - Click "Next" on the "PCB" screen
 
@@ -63,8 +63,6 @@ A 12 cm, 12 V, 1600 RPM low speed fan (e.g. Sunon HAC0251S4) can be used to cool
 - Click "Add CPL file" and provide the location of `positions.csv`
 
 - Click "Process BOM & CPL"
-
-- Click "Add CPL file" and provide the location of `positions.csv`
 
 - Click "Next" on the "Bill of Materials" screen
 
